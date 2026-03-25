@@ -1,0 +1,92 @@
+/* Post-classic Theme for Rofi (Hậu hiện đại x Cổ điển) */
+* {
+    /* Classic warm/ivory tones (Cổ điển) mixed with sharp dark borders (Hậu hiện đại) */
+    bg-primary: #F4F1EA;       /* Warm ivory/paper */
+    bg-secondary: #E8E4D9;     /* Slightly darker parchment */
+    fg-primary: #2A2A2A;       /* Ink black */
+    accent: #D72638;           /* Post-modern stark red */
+    border-color: #2A2A2A;     /* Thick black borders typical of brutalism/post-modern */
+
+    background-color: transparent;
+    text-color: @fg-primary;
+    margin: 0;
+    padding: 0;
+}
+
+window {
+    background-color: @bg-primary;
+    border: 4px;
+    border-color: @border-color;
+    border-radius: 0px; /* Sharp corners for brutalist feel */
+    width: 600px;
+}
+
+mainbox {
+    padding: 20px;
+    spacing: 15px;
+}
+
+inputbar {
+    background-color: @bg-secondary;
+    border: 2px;
+    border-color: @border-color;
+    padding: 10px;
+    spacing: 10px;
+    children: [prompt, entry];
+}
+
+prompt {
+    font: "JetBrainsMono Nerd Font Bold 16";
+    text-color: @fg-primary;
+    background-color: @accent;
+    padding: 8px 12px;
+    border: 2px;
+    border-color: @border-color;
+}
+
+entry {
+    font: "JetBrainsMono Nerd Font 16";
+    placeholder: "Search / Tìm kiếm...";
+    placeholder-color: #8C8C8C;
+    padding: 8px;
+    vertical-align: 0.5;
+}
+
+listview {
+    columns: 1;
+    lines: 7;
+    spacing: 8px;
+    border: 0px;
+    scrollbar: false;
+}
+
+element {
+    padding: 12px;
+    border: 2px;
+    border-color: transparent; /* Invisible border until selected */
+}
+
+element-icon {
+    size: 32px;
+    padding: 0 12px 0 0;
+}
+
+element-text {
+    vertical-align: 0.5;
+    font: "JetBrainsMono Nerd Font 14";
+}
+
+element normal.normal {
+    background-color: @bg-primary;
+    text-color: @fg-primary;
+}
+
+element alternate.normal {
+    background-color: @bg-primary;
+}
+
+element selected.normal {
+    background-color: @bg-secondary;
+    border-color: @accent;
+    text-color: @fg-primary;
+}
