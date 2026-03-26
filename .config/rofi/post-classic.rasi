@@ -1,11 +1,11 @@
-/* Post-classic Theme for Rofi (Hậu hiện đại x Cổ điển) */
+/* Post-classic Theme for Rofi -> Catppuccin */
 * {
-    /* Classic warm/ivory tones (Cổ điển) mixed with sharp dark borders (Hậu hiện đại) */
-    bg-primary: #F4F1EA;       /* Warm ivory/paper */
-    bg-secondary: #E8E4D9;     /* Slightly darker parchment */
-    fg-primary: #2A2A2A;       /* Ink black */
-    accent: #D72638;           /* Post-modern stark red */
-    border-color: #2A2A2A;     /* Thick black borders typical of brutalism/post-modern */
+    /* Catppuccin Mocha */
+    bg-primary: #1e1e2e;       /* Base */
+    bg-secondary: #313244;     /* Surface0 */
+    fg-primary: #cdd6f4;       /* Text */
+    accent: #b4befe;           /* Lavender */
+    border-color: #cba6f7;     /* Mauve */
 
     background-color: transparent;
     text-color: @fg-primary;
@@ -37,7 +37,7 @@ inputbar {
 
 prompt {
     font: "JetBrainsMono Nerd Font Bold 16";
-    text-color: @fg-primary;
+    text-color: #1e1e2e;
     background-color: @accent;
     padding: 8px 12px;
     border: 2px;
@@ -45,11 +45,12 @@ prompt {
 }
 
 entry {
-    font: "JetBrainsMono Nerd Font 16";
-    placeholder: "Search / Tìm kiếm...";
-    placeholder-color: #8C8C8C;
+    font: "JetBrainsMono Nerd Font 14";
+    placeholder: "Search...";
+    placeholder-color: #a6adc8; /* Subtext0 */
     padding: 8px;
     vertical-align: 0.5;
+    text-color: @fg-primary;
 }
 
 listview {
