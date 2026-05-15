@@ -7,7 +7,7 @@ sudo pacman -Sy --needed --noconfirm \
     firefox git base-devel zsh zsh-completions curl brightnessctl rtkit \
     ttf-jetbrains-mono-nerd ttf-firacode-nerd xorg-fonts-misc \
     android-file-transfer anki bleachbit fastfetch \
-    7zip unzip mpv cmus maim xclip polkit-gnome \
+    7zip unzip mpv cmus maim xclip clipmenu polkit-gnome \
     thunar thunar-archive-plugin thunar-volman gvfs
 
 # Change default shell to zsh
