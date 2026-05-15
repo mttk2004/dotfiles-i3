@@ -1,0 +1,53 @@
+[global]
+    # Kích thước và vị trí
+    width = 300
+    origin = top-right
+    offset = 20x20
+    notification_limit = 5
+
+    # Giao diện (Tối giản & Thanh lịch)
+    padding = 24
+    horizontal_padding = 24
+    frame_width = 1
+    gap_size = 8
+    separator_color = frame
+    corner_radius = 3
+    transparency = 5
+
+    # Font chữ
+    font = "Sans 10"
+
+    # Định dạng nội dung
+    markup = full
+    format = "<b>%s</b>\n<span size='90%'>%b</span>"
+    alignment = left
+    vertical_alignment = center
+    word_wrap = yes
+
+    # Icon
+    icon_position = left
+    max_icon_size = 32
+
+[urgency_low]
+    # Màu nền và viền (Catppuccin Mocha - Xanh dương)
+    background = "#1E1E2E"
+    foreground = "#CDD6F4"
+    frame_color = "#89B4FA"
+    # Tự động ẩn sau 5 giây
+    timeout = 5
+
+[urgency_normal]
+    # Màu nền và viền (Catppuccin Mocha - Tím)
+    background = "#1E1E2E"
+    foreground = "#CDD6F4"
+    frame_color = "#CBA6F7"
+    # Tự động ẩn sau 5 giây
+    timeout = 5
+
+[urgency_critical]
+    # Màu nền và viền (Catppuccin Mocha - Đỏ)
+    background = "#1E1E2E"
+    foreground = "#CDD6F4"
+    frame_color = "#F38BA8"
+    # Không tự động ẩn với thông báo quan trọng
+    timeout = 0
