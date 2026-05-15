@@ -4,6 +4,7 @@ sudo pacman -Sy --needed --noconfirm \
     alacritty rofi polybar picom dunst feh network-manager-applet spice-vdagent \
     xorg-xrandr xorg-xrdb xorg-server xorg-xinit xdotool i3-wm \
     wireplumber pipewire pipewire-pulse pipewire-alsa pavucontrol \
+    xdg-desktop-portal xdg-desktop-portal-gtk \
     firefox git base-devel zsh zsh-completions curl brightnessctl rtkit \
     ttf-jetbrains-mono-nerd ttf-firacode-nerd xorg-fonts-misc \
     android-file-transfer anki bleachbit fastfetch \
